@@ -129,4 +129,11 @@ width: 20vw;
 }
 
 
+.prev-btn{
+  cursor: pointer;
+}
+.nxt-btn{
+  cursor: pointer;
+}
+
 
