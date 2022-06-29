@@ -128,6 +128,13 @@ width: 20vw;
   width: 100%;
 }
 
+.favourite-genre{
+  padding: 3rem;
+}
+
+.favourite-table{
+  padding: 3rem;
+}
 
 .prev-btn{
   cursor: pointer;
@@ -135,5 +142,7 @@ width: 20vw;
 .nxt-btn{
   cursor: pointer;
 }
+
+
 
 
