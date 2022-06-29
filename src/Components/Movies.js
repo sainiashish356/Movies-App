@@ -51,6 +51,15 @@ export default class Movies extends Component {
    }
   }
 
+  handleClick = (value) => {
+    if(value != this.state.currPage){
+      this.setState({
+        currPage: value
+      } , this.changeMovies)
+    }
+
+  }
+
 
   render() {
     // let movie = movies.results;
@@ -90,10 +99,10 @@ export default class Movies extends Component {
                               <ul class="pagination">
                               <a className="page-link prev-btn" onClick={this.handlePrev}>Previous</a>
                               {
-                                this.state.parr.map((value) => (
-                                  <li class="page-item disabled"> <a class="page-link" href="#">{value}</a> </li>
-                                ))
-                              }
+                                    this.state.parr.map((value)=>(
+                                        <li class="page-item"><a class="page-link" onClick={()=>this.handleClick(value)}>{value}</a></li>
+                                    ))
+                                }
                                
                                 <li class="page-item">
                                   <a className="page-link nxt-btn" onClick={this.handleRight}>Next</a>
