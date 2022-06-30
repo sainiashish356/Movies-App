@@ -134,6 +134,7 @@ width: 20vw;
 
 .favourite-table{
   padding: 3rem;
+  overflow: auto;
 }
 
 .prev-btn{
